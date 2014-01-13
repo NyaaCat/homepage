@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
 
     <title>Nyan World</title>
     <link rel="stylesheet" href="static/css/pure.css"/>
@@ -12,35 +11,70 @@
 </head>
 <body>
 
+<div class="header">
+    <div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
+        <a class="pure-menu-heading" href="#">Nyan World</a>
+        <ul>
+            <li class="pure-menu-selected"><a href="./">首页</a></li>
+            <li><a href="./joinus.html">加入我们</a></li>
+            <li><a href="./rules.html">游戏规则</a></li>
+            <li><a href="./plugins.html">插件</a></li>
+            <li><a href="./recommends.html">推荐资源</a></li>
+            <li><a href="./gallery.html">世界风景</a></li>
+            <li><a href="./faq.html">FAQ</a></li>
+            <li><a href="./about.html">关于</a></li>
+        </ul>
+    </div>
+</div>
+
 <div class="content">
-    <div class="header">
-        <div class="pure-menu pure-menu-open pure-menu-fixed pure-menu-horizontal">
-            <a class="pure-menu-heading" href="#">Nyan World</a>
-            <ul>
-                <li class="pure-menu-selected"><a href="#">首页</a></li>
-                <li><a href="#">加入我们</a></li>
-                <li><a href="#">游戏规则</a></li>
-                <li><a href="#">插件</a></li>
-                <li><a href="#">推荐资源</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">关于</a></li>
-            </ul>
+
+    <div class="lead">
+        <h1>喵帕斯！</h1>
+        <p>这里是一个被玩坏的世界喵！</p>
+        <p><del>要怪就怪二小姐哼！</del></p>
+
+        <div class="comment">
+            这是一个玩坏的世界喵~<br/>
+            那么, 就让它坏得更彻底一点吧~<br/>
+            每个主城都有自己的故事等着乃去发现嗷~
+            <p>felixonmars</p>
+        </div>
+        <div class="comment">
+            这是一个玩坏的世界喵~<br/>
+            那么, 就让它坏得更彻底一点吧~<br/>
+            每个主城都有自己的故事等着乃去发现嗷~
+            <p>felixonmars</p>
+        </div>
+        <div class="comment">
+            这是一个玩坏的世界喵~<br/>
+            那么, 就让它坏得更彻底一点吧~<br/>
+            每个主城都有自己的故事等着乃去发现嗷~
+            <p>felixonmars</p>
+        </div>
+        <div class="comment">
+            这是一个玩坏的世界喵~<br/>
+            那么, 就让它坏得更彻底一点吧~<br/>
+            每个主城都有自己的故事等着乃去发现嗷~
+            <p>felixonmars</p>
         </div>
     </div>
-
-    <div style="height: 550px;">
-
-    </div>
-
-    <div class="l-box ribbon">
-        <h2>现在开始。</h2>
-        <a href="#" class="pure-button pure-button-primary">加入我们</a>
-    </div>
-    <div class="footer">
-        一起来玩耍喵～
-    </div>
+</div>
+<div class="l-box ribbon">
+    <h2>现在开始。</h2>
+    <a href="#" class="pure-button pure-button-primary">加入我们</a>
+</div>
+<div class="footer">
+    一起来玩耍喵～
 </div>
 <script src="static/js/jquery-1.10.2.min.js"></script>
 <script src="static/js/functions.js"></script>
+<script>
+    // Random background-image
+    var images = [
+        '01.jpg'
+    ];
+    $('div.content').css({'background-image': 'url(static/img/background/' + images[Math.floor(Math.random() * images.length)] + ')' });
+</script>
 </body>
 </html>
