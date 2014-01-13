@@ -2,7 +2,10 @@
 
 
 .lead {
-    background: url("../img/mcindex1.png") no-repeat 0% 0%;
+    background: url("../img/mcindex1.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     min-height: 40em;
     padding: 100px 20px 0px;
