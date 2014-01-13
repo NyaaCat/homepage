@@ -1,0 +1,17 @@
+/* Aditional styles */
+
+.lead {
+    background: url("../img/mcindex1.png") no-repeat 0% 0% rgb(7, 78, 104);
+    min-height: 40em;
+    padding: 100px 20px 0px;
+}
+
+h1.lead-text {
+    font-size: 3.5em;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h3, h4, h5, .lead-text {
+    color: #ffffff;
+}
