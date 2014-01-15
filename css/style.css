@@ -49,3 +49,9 @@ h1.lead-text {
     margin: 0 -1em 0 !important;
     float: left !important;
 }
+
+.gallery {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
