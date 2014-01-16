@@ -69,6 +69,34 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="large-12 columns">
+        <ul>
+            <li>
+                Q: Linux 下 Minecraft 如何输入中文（或其他CJK字符）？
+            </li>
+            <li>
+                <p>
+                    A: Linux 下 MineCraft 输入中文/日文等解决方案：(须Mod，无须修改客户端，支持任何输入法)                
+                </p>
+<pre><code>#!/bin/bash
+xdotool key "t"
+kdialog --inputbox ' ' | xclip -i -selection clipboard
+xdotool key "ctrl+v"
+xdotool key Return
+</code>
+</pre>
+                <p>
+                    KDE以外用户请将第三行改成 <code>kdialog --inputbox ' ' 2>&1 | xclip -i -selection clipboard</code> ）
+                </p>
+                <p>（将以上脚本绑定到任意快捷键比如Super+t即可。在游戏中按下快捷键，会弹出对话框，即可输入任意文字，回车后自动发送。</p>
+                <p>需要 <code>xdotool</code> 和 <code>xclip</code> 工具，请自行安装。如果是 <code>apt-get</code> 的话命令如下：</p>
+                <p><code>sudo apt-get install xclip xdotool﻿</code></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <script src="js/vendor/jquery.js"></script>
 <script src="js/foundation.min.js"></script>
 <script>
