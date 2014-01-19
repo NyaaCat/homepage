@@ -72,6 +72,9 @@
 
 <div class="row">
     <div class="large-12 columns">
+        <h4>技术问题</h4>
+    </div>
+    <div class="large-12 columns">
         <ul>
             <li>Q: 第一次加入服务器如何注册？以后如何登录？</li>
             <li>A: 首次加入服务器需要游戏内注册，使用命令 <code>/register [密码] [重复密码]</code> 即可完成注册。例如： <code>/register MyPassWord MyPassword</code> 。以后每次加入游戏时，需要输入登录命令 <code>/login [密码]</code> 以登入游戏。在每次进入服务器时都会有提示，按提示操作即可。</li>
@@ -97,6 +100,31 @@ xdotool key Return
                 <p>（将以上脚本绑定到任意快捷键比如Super+t即可。在游戏中按下快捷键，会弹出对话框，即可输入任意文字，回车后自动发送。</p>
                 <p>需要 <code>xdotool</code> 和 <code>xclip</code> 工具，请自行安装。如果是 <code>apt-get</code> 的话命令如下：</p>
                 <p><code>sudo apt-get install xclip xdotool﻿</code></p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 columns">
+        <h4>插件相关</h4>
+    </div>
+    <div class="large-12 columns">
+        <ul>
+            <li>Q: 如何使用锁箱插件？</li>
+            <li>A: 放置一个箱子(或其他可以存放物品的容器)，向其上放置一块木牌，不需要写任何内容，即可锁住该容器。只有木牌上有名字的玩家才可以打开。如果有些容器无法直接右键放置，请按住 <kbd>Shift</kbd> 再右键放置。 </li>
+        </ul>
+        <ul>
+            <li>Q: 如何创建商店？</li>
+            <li>
+                A: 玩家可以创建2种商店：销售商店与回收商店。创建商店使用以下步骤： <br/>
+                1. 放置一个箱子(建议锁住)，其中放置一次性交易的物品(如一次销售一颗钻石则放置一颗钻石)，并使用<strong>红石粉</strong> <strong>左键</strong> 点击该箱子以保存此箱子的位置与内容。<br/>
+                2. 放置一个木牌(箱子与木牌可以在同一个世界的任何未受保护的相同或不同地方)，内容为： <br/>
+                第一行| <code>[Buy]</code> (销售) 或 <code>[Sell]</code> (回收) <br/>
+                第二行| 任意内容 <br/>
+                第三行| 任意内容 <br/>
+                第四行| 一次性交易价格 <br/>
+                完成木牌放置，使用 <strong>红石粉</strong> <strong>左键</strong> 点击该木牌，即可完成商店的创建。其他玩家右键点击该木牌即可完成交易。
             </li>
         </ul>
     </div>
