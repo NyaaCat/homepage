@@ -181,6 +181,7 @@ header, section.content , footer {
 #top-bar-logo {
 	float: left;
 	padding-top: 10px;
+	margin-right: 45px;
 }
 #top-nav {
 	height: 80px;
@@ -249,11 +250,12 @@ hgroup {
 	margin: 0 auto;
 	border: solid 1px #fff;
 	border-radius: 2px;
-
+	color: #fff;
 	/*background-color: rgba(255,255,255,.3);*/
 	cursor: pointer;
 	transition: all .5s;
 }
+
 #header-join-game:hover, #header-join-game:focus {
 	background-color: rgba(255,255,255,1);
 	color: #10171F;
