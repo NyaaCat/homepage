@@ -365,6 +365,7 @@ footer h4 {
 footer p {
 	font-size: 11px;
 	color: #999
+;margin: 0;
 }
 footer p span {
 	padding: 2px 5px 1px 5px;
@@ -374,7 +375,7 @@ footer p span {
 }
 #footer-right {
 	/* width: 30%; */
-	min-width: 300px;
+	min-width: 250px;
 	display: inline-block;
 	border-left: solid 1px #999;
 	padding-left: 15px;
@@ -394,7 +395,7 @@ footer p span {
 	margin-left: 33px;
 }
 #footer-center-a {
-	width: 40%;
+	/* width: 40%; */
 	min-width: 650px;
 	display: inline-block;
 	border-left: solid 1px #999;
