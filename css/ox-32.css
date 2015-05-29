@@ -80,20 +80,17 @@ body {
 	margin: 0;
 	color: #fff;
 	line-height: 1.5em;
-	/*background-image: url(../img/javaw-2015-05-16-19-31-38-79.jpg);*/
-	background-image: url('../img/javaw 2015-05-16 19-35-01-78.png');
+	background-image: url('../img/bg.jpg');
 	background-size: cover;
 	/*background-position: 0% 0%;*/
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	/*           Ã¢Â¬â€¡ 1%        OS X                    UbuntuÃ¯Â¸Â        Win 8+               Vista ~ Win7 */
 	font-family: 'DengXian', 'Heiti TC', 'Heiti SC', 'Ã¦â€“â€¡Ã¦Â³â€°Ã©Â©Â¿Ã¥Â¾Â®Ã§Â±Â³Ã©Â»â€˜', 'Microsoft Yahei UI', 'Microsoft Yahei', 'Hiragino Sans GB', 'Roboto', 'Droid Sans Fallback'
 
 }
 body#about {
-	background-image: url('../img/javaw-2015-05-16-19-31-38-79 2.jpg');
-	/*background-image: url('../img/javaw-2015-05-16-19-36-10-95.jpg');*/
+	background-image: url('../img/aboutbg.jpg');
 }
 a {
 	/*color: #b3c9df;*/
