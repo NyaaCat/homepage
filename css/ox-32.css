@@ -87,8 +87,8 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow: hidden;
-	/*           Ã¢Â¬â€¡ 1%        OS X                    UbuntuÃ¯Â¸Â        Win 8+               Vista ~ Win7 */
-	font-family: 'DengXian', 'Heiti TC', 'Heiti SC', 'Ã¦â€“â€¡Ã¦Â³â€°Ã©Â©Â¿Ã¥Â¾Â®Ã§Â±Â³Ã©Â»â€˜', 'Microsoft Yahei UI', 'Microsoft Yahei', 'Hiragino Sans GB', 'Roboto', 'Droid Sans Fallback'
+	/*           1%          OS X                    Win 8+                Vista ~ Win7 */
+	font-family: 'DengXian', 'Heiti TC', 'Heiti SC', 'Microsoft Yahei UI', 'Microsoft Yahei', 'Hiragino Sans GB', 'Roboto', 'Droid Sans Fallback'
 
 }
 body#about {
