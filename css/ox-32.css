@@ -238,6 +238,12 @@ hgroup {
 	text-align: center;
 	margin-top: calc( 50vh - 140px );
 }
+#about hgroup {
+	margin-top: 2em;
+}
+#about .content {
+	padding-top: 0;
+}
 #header-join-game {
 	width: 20%;
 	min-width: 200px;
