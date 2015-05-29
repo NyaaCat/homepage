@@ -348,20 +348,19 @@ footer {
 	text-align: center;
 }
 #footer-left {
-	width: 38%;
+	width: 11%;
+	min-width: 165px;
 	/*min-width: */
 	display: inline-block;
 	/* padding: 0 0 0 55px; */
 	vertical-align: middle;
 }
-
-div#footer-left {}
 .footer-title {
 	font-size: 14px;
 
 }
 footer h4 {
-	margin-left: 0;
+	margin: 0;
 }
 footer p {
 	font-size: 11px;
@@ -374,10 +373,32 @@ footer p span {
 	color: #333;
 }
 #footer-right {
-	width: 55%;
+	/* width: 30%; */
+	min-width: 300px;
 	display: inline-block;
 	border-left: solid 1px #999;
-	padding-left: 29px;
+	padding-left: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #999;
+}
+#footer-right ul {
+	padding: 0;
+	margin: 0;
+}
+#footer-right > ul > li {
+	list-style: none;
+}
+#footer-right ul li ul {
+	margin-left: 33px;
+}
+#footer-center-a {
+	width: 40%;
+	min-width: 650px;
+	display: inline-block;
+	border-left: solid 1px #999;
+	padding: 0 15px 0 15px;
 	text-align: left;
 	vertical-align: middle;
 }
