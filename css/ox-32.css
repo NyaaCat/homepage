@@ -86,13 +86,15 @@ body {
 }
 body#index {
 	background-image: url('../img/bg.jpg');
-	background-size: cover;
-	/*background-position: 0% 0%;*/
-	background-attachment: fixed;
+	background-size: auto 100%;
+	/* background-size: cover; */
+	/* background-position: 0% 0%; */
+	/* background-attachment: fixed; */
 	background-repeat: no-repeat;
 }
 body#about {
 	background-image: url('../img/aboutbg.jpg');
+	background-attachment: fixed;
 }
 a {
 	/*color: #b3c9df;*/
