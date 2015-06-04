@@ -82,7 +82,7 @@ body {
 	line-height: 1.5em;
 	overflow: hidden;
 	/*           1%          OS X                    Win 8+                Vista ~ Win7 */
-	font-family: 'DengXian', 'Heiti TC', 'Heiti SC', 'Microsoft Yahei UI', 'Microsoft Yahei', 'Hiragino Sans GB', 'Roboto', 'Droid Sans Fallback'
+	font-family: 'WenQuanYi Microhei', 'Hiragino Sans GB', 'Heiti TC', 'Heiti SC', 'Microsoft Yahei UI', 'Microsoft Yahei', 'Hiragino Sans GB', 'Roboto', 'Droid Sans Fallback'
 }
 body#index {
 	background-image: url('../img/bg.jpg');
@@ -254,7 +254,7 @@ hgroup {
 	max-width: 500px;
 	line-height: 45px;
 	text-align: center;
-	 margin: 0 auto; 
+	 margin: 0 auto;
 	border: solid 1px #fff;
 	border-radius: 2px;
 	color: #fff;
@@ -528,7 +528,3 @@ i.icon-bubbles {}
 		border: none;
 	}
 }
-
-
-
-
