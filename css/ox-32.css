@@ -116,6 +116,10 @@ h1 {
 h2 {
 	text-align: center;
 }
+h3 {
+	text-align: center;
+	margin: 8px;
+}
 h4 {
 	/* margin-left: 2em; */
 	color: #CCC;
