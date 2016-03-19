@@ -1,231 +1,182 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>喵窝 - 首页</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<!-- <link href="./css/ox-32.min.css" rel="stylesheet"> -->
-<link href="./css/ox-32.css" rel="stylesheet">
-<link href="./css/webfont.css" rel="stylesheet">
-<link href="./css/cube.css" rel="stylesheet">
-<script type="text/javascript" src="./jquery-1.11.3.min.js"></script>
-<style type="text/css">
-</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>喵窝</title>
+    <meta name="description" content="NyaaCat 社区 Minecraft 服务器「喵窝」">
+    <meta name="keywords" content="喵窝,NyaaCat,Minecraft">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=2.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <!-- <meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+    <link rel="stylesheet" href="css/onepage-scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.onepage-scroll.min.js"></script>
 </head>
-<body id="index">
-    <section id="top-bar">
-    	<div id="top-bar-logo">
-    		<img src="./img/logo.png" width="auto" height="70px" alt="" title="">
-    	</div>
-    	<nav id="top-nav">
-    		<ul>
-    			<a href="/"><li class="nav-li" id="">
-    				<span class="nav-span-zh">主页</span>
-    				<span class="nav-span-en">Home</span>
-    			</li></a>
-    			<a href="./about.html"><li class="nav-li" id="">
-    				<span class="nav-span-zh">关于</span>
-    				<span class="nav-span-en">About</span>
-    			</li></a>
-    			<a href="https://wiki.nyaa.cat"><li class="nav-li" id="">
-    				<span class="nav-span-zh">文档</span>
-    				<span class="nav-span-en">Wiki</span>
-    			</li></a>
-    			<a href="https://bbs.nyaa.cat"><li class="nav-li" id="">
-    				<span class="nav-span-zh">论坛</span>
-    				<span class="nav-span-en">BBS</span>
-    			</li></a>
-                <a href="https://github.com/NyaaCat" target="_blank"><li class="nav-li" id="">
-                    <span class="nav-span-zh">项目</span>
-                    <span class="nav-span-en">Projects</span>
-                </li></a>
-    		</ul>
-    	</nav>
-    </section>
-    <!-- END [TOP BAR] SECTION -->
 
-    <div class="wrap cube-perspective cube-unselectable" id="port">
-        <span class="cube parallax-layer cube-1" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-2" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-3" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-4" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-5" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-6" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-7" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-8" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-9" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-10" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-11" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span class="cube parallax-layer cube-12" ><i></i><i></i><i></i><i></i><i></i><i></i></span>
-     </div>
-
-    <!-- .wrap -->
-
-    <script>
-    // 》》》》MIT License 《《《《
-    $(document).scroll(function(){
-        if ($(document).scrollTop() > 65) {
-            $('#top-bar').addClass('magic-change');
+<body>
+    <header>
+        <div id="header-logo"> </div>
+        <nav class="header-nav">
+            <ul class="nav" id="header-nav-ul">
+                <a href="#section-1">
+                    <li class="nav">关于我们</li>
+                </a>
+                <a href="#section-3">
+                    <li class="nav">加入我们</li>
+                </a>
+                <a href="https://wiki.nyaa.cat" target="_blank">
+                    <li class="nav">NyaaWiki</li>
+                </a>
+                <a href="https://bbs.nyaa.cat" target="_blank">
+                    <li class="nav">NyaaBBS</li>
+                </a>
+                <a href="https://github.com/NyaaCat" target="_blank">
+                    <li class="nav">GitHub</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <section id="section-0">
+            <hgroup>
+                <h3>にゃんぱすー</h3>
+                <h2>NyaaCat 社区 Minecraft 服务器「喵窝」</h2>
+                <hr>
+                <h3><small>游戏进行中喵！</small></h3>
+                <div id="learn-more"><a href="#section-1" class="btn-1" id="btn-learn-more">了解更多</a> </div>
+            </hgroup>
+        </section>
+        <section id="section-1">
+            <div class="section-content">
+                <h4>关于我们</h4>
+                <p>我们是 NyaaCat 社区，是一个由兴趣驱动的非营利性社区。「喵窝」是我们的 Minecraft 服务器。</p>
+                <p>我们坚持「自由、平等、开放、有爱」的理念，我们坚持原版、兼容、稳定的服务器，多层筛选、严格审核每一份申请，我们希望能够为大家提供一个没有压力、随时可以回来玩、随时可以一起在线上相聚的平台。我们希望每一位成员都能够在这里感受到「家」的温暖。</p>
+                <p>这里有来自百度、腾讯、阿里、网易、亚马逊等等互联网巨头公司的员工，也有正在起飞的各类互联网创业公司的伙伴。有来自清华、北大、华科大、中科大、南大、中科院、卡梅隆、大阪大学等等高校和研究院的学生和研究人员，也有机灵活泼、朝气蓬勃的高中生。有热爱二次元文化的黑客们，也有每晚熬夜奋战制作字幕的字幕组成员，更有无数开源社区的贡献者。</p>
+                <p>我们是一群互联网上的创造者，满怀着爱和信念。我们正在缔造美好的互联网世界。从社区收获、向社区贡献，从而成就并丰富社区的意义。</p>
+            </div>
+        </section>
+        <section id="section-2">
+            <div class="section-content">
+                <h5 style="margin-top: 1rem;">我们拥有</h5>
+                <ul>
+                    <li>超过 <em>400</em> 名有效玩家</li>
+                    <li><em>10240</em> 格子半径、文件大小 <em>7.9GB</em> 的巨型主世界地图</li>
+                    <li><em>3.1GB</em> 的 <em>365</em> 天世界数据变动日志</li>
+                    <li><em>24TB</em> 总计数据备份</li>
+                    <li><em>4</em> 台物理机和 <em>9</em> 台虚拟机用于支撑所有的服务</li>
+                    <li><em>三大运营商</em>骨干网络，教育网 <em>IPv4+IPv6</em> 双栈接入，外加部署在香港、日本、美国、欧洲的加速节点</li>
+                    <li><em>2</em> 个独立开发维护的插件， <em>8</em> 份完整脑洞实现的插件配置</li>
+                    <li style="display:block;width:100%;margin:0">更多...</li>
+                </ul>
+                <h5 style="margin-top: 2rem;">我们来自</h5>
+                <ul id="vrcomefrom">
+                    <li>Arch Linux 中文社区</li>
+                    <li>V2EX</li>
+                    <li>A3G Hackers</li>
+                    <li>Google+ ACG 中文圈</li>
+                    <li>华中科技大学风蓝动漫社</li>
+                    <li>ANK-Raws & KNA Subs</li>
+                    <li>DHR 动研字幕组</li>
+                    <li>动漫流行馆</li>
+                    <li>莳乃字幕屋</li>
+                    <li>茉语字幕组</li>
+                    <li>诸神字幕组</li>
+                    <li style="display:block;width:100%;margin:0">更多...</li>
+                </ul>
+                <h5 style="text-align: center;clear: both;margin-top: 9rem;">合作机构</h5>
+                <ul class="partners-ul">
+                    <li><img src="/img/logo/1.jpg"> </li>
+                    <li><img src="/img/logo/2.jpg"> </li>
+                    <li><img src="/img/logo/3.jpg"> </li>
+                    <li><img src="/img/logo/4.jpg"> </li>
+                    <li><img src="/img/logo/8.jpg"> </li>
+                    <li><img src="/img/logo/5.jpg"> </li>
+                    <li><img src="/img/logo/9.jpg"> </li>
+                    <li><img src="/img/logo/6.jpg"> </li>
+                    <li><img src="/img/logo/7.jpg"> </li>
+                </ul>
+            </div>
+        </section>
+        <section id="section-3">
+            <div class="section-content">
+                <h4>加入我们</h4>
+                <div class="left">
+                    <h5>如果你</h5>
+                    <ul class="ul-checked-list">
+                        <li>认可 NyaaCat 社区的原则和准则</li>
+                        <li>了解社区礼仪并严格要求自己</li>
+                        <li>能够做到对社区、对自己负责</li>
+                        <li>拥有合法的 Mojang 正版帐号</li>
+                        <li>得到喵窝玩家的邀请</li>
+                        <li>已经认真阅读喵窝服务器游戏规则</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h5>写一封申请信，包括以下内容</h5>
+                    <div id="mail">
+                        <ul>
+                            <li> 邮件标题 <span>申请加入喵窝</span> </li>
+                            <li> 收件人 <span>OwO@Nyaa.Cat</span> </li>
+                            <li> 邮件正文
+                                <ol>
+                                    <li>你的正版 ID</li>
+                                    <li>邀请玩家 ID</li>
+                                    <li>个人主页地址</li>
+                                    <li>简单的自我介绍</li>
+                                    <li>申请起源，包括：从何处得知喵窝、为何选择喵窝、以前的单机/联机游戏经历及感受等</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <small class="ox-fs-1">如果审核通过，你将会在 72 小时内接到通知邮件。建议您将 owo@nyaa.cat 加入联系人列表以免错过信件</small>
+                </div>
+                <footer>
+                    <div class="left">
+                        <img src="./img/logo/nyaacat.logo.color.png" id="footer-logo">
+                        <h6><small>にゃんぱすー</small> NyaaCat 社区 Minecraft 服务器「喵窝」</h6>
+                    </div>
+                    <div class="right"> ©喵窝(Nyaa.Cat) 2016, All rights reserved.
+                        <p class="icon-embed2" id="ox"><i class="icon-code"></i> by <a href="https://www.ooxx.dk" title="Go to OX's Homepage" alt="OX(Ou TakashiMine)"><span class="icon-link">OX</span></a> on <i class="icon-apple"></i> with <i class="icon-heart"></i>️</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript">
+        if ($(window).height() <= 750 || $(window).width() <= 740) {
+            $('.main').onepage_scroll({
+                responsiveFallback: true
+            })
         } else {
-            $('#top-bar').removeClass('magic-change')
-        };
-    });
+            $('.main').onepage_scroll();
+        }
 
-    MouseFollower = (function(){
-        var store = [],
-            xdeg = ydeg = 0,
-            sPos = {},
-            invert = 1;
-        document.body.onmousemove = followElements;
-        function prefixStyle(el,p,style){
-            var prefixes = ["webkit","moz","o",""],
-                    i = 0;
-            p = p.charAt(0).toUpperCase() + p.slice(1);
-            [].forEach.call(prefixes, function(prefix){
-                if( prefix == ""){
-                    p = p.charAt(0).toLowerCase() + p.slice(1);
-                    el.style[prefix + p] = style;
-                }else{
-                    el.style[prefix + p] = style;
-                }
-            });
-        }
-        function posOnScreen(el){
-            return el.getBoundingClientRect();
-        }
-        function followElements( e ){
-            [].forEach.call( store , function(item, index){
-                sPos = posOnScreen( item.element );
-                /* if the element is in the viewport */
-                if( sPos.top > -sPos.height || sPos.top < document.documentElement.clientHeight + sPos.height){
-                    invert = item.invert ? -1 : 1;
-                    xdeg = -90 * invert * ( e.clientX - sPos.left ) / document.documentElement.clientWidth + "deg";
-                    ydeg = 90 * invert * ( e.clientY - sPos.top ) / document.documentElement.clientHeight + "deg";
-                    prefixStyle(item.element,"transform","rotateY("+xdeg+") rotateX("+ydeg+")");
-                }else{
-                }
-            });
-        }
-        function add( opt ){
-            if( opt && opt.element ){
-                store.push( opt );
+        function slider() {
+            if ($(window).width() <= 740) {
+                $('.header-nav').toggleClass('show');
+                $('.main').toggleClass('move-r');
+                $('.main').toggleClass('blur');
+                $('body').toggleClass('slider-on');
             }
         }
-        function remove(arguments) {
-        }
-        function stop() {
-            store = [];
-        }
-        return {
-            add: add,
-            remove: remove,
-            stop: stop
-        }
-    })();
-    for (var i=1; i<=12; i++) {
-        MouseFollower.add({
-            element: document.querySelector('.cube-'+i),
-            invert: true
+        $('#header-logo, #header-nav-ul').click(function () {
+            slider();
         });
-    }
 
-    // 》》》》MIT License ↑《《《《
+        function bodyScroll() {
+            if ($('#section-1').offset().top <= 100) {
+                $('body').removeClass('viewing-page-1');
+            } else {
+                $('body').addClass('viewing-page-1');
+            }
+        }
+        setInterval('bodyScroll();', 300);
 
     </script>
-    <!-- ~ -->
-    <header>
-        <hgroup>
-            <!-- <img src="./img/nyaa-a0-b-fs.svg" width="28px"> -->
-            <h1>喵窝</h1>
-            <h3>にゃんぱすー</h3>
-        </hgroup>
-        <div id="header-join-game">
-            <a href="https://wiki.nyaa.cat/%E6%96%B0%E7%8E%A9%E5%AE%B6%E7%94%B3%E8%AF%B7" id="header-join-game-a">开始游戏</a>
-        </div>
-        <div id="direction"></div>
-    </header>
-    <section class="index-section-introductions">
-        <ul class="index-introductions">
-            <li class="icon-heart">
-                <h3>友善欢迎的玩家群体</h3>
-                <p>在喵窝，我们欢迎任何新玩家和老玩家。只要是正常游戏，不进行恶意破坏的玩家，我们都会友善对待。刚接触 Minecraft 不久，或是缺乏经验？没问题，只需在聊天频道询问，很快就能得到回答或者帮助。</p>
-            </li>
-            <li class="icon-cog">
-                <h3>功能强大，完美兼容</h3>
-                <p>从可以锁定防止偷盗的木箱，到基于货币的交易系统，甚至召唤拥有强大辅助技能的宠物帮助自己战斗……只需要官方的原版客户端，就可以体验喵窝有各种各样好玩有趣的新功能。再也不用折腾各种奇怪的插件啦！登录服务器即可开始玩耍。</p>
-            </li>
-            <li class="icon-lifebuoy">
-                <h3>探险者的圣地</h3>
-                <p>在这里，你可以探索喵窝尚未开拓的广阔地形，多种地貌等待着伟大的探险家们:你可以前往景色壮观，资源丰富，机遇与危险并存的异世界进行矿物采掘，并将收获用于增强自身或高价出售。</p>
-            </li>
-            <li class="icon-hammer2">
-                <h3>建筑师的天堂</h3>
-                <p>在喵窝，你可以凭借自己完成的作品申请建筑师资格，以获得无限的材料和飞行能力来帮助自己早日完工。建筑师可以使用 WorldEdit 等来简化重复操作。当灵感未能如约而至时，你也可以参观其他人完成的各式各样的建筑物来激发自己的想象力。</p>
-            </li>
-        </ul>
-    </section>
-    <footer>
-    	<div id="footer-left">
-    		<h4 class="footer-title">服务器信息</h4>
-    		<p class="severs-info">
-                <span style="background-color:#66FF66">1.8.8</span><br/>
-                <span style="background-color:#FF99CC">Vanilla</span><br/>
-                <span style="background-color:#FFFF33">正版验证</span><br/>
-                <span style="background-color:#66CCFF">白名单开启</span><br/>
-                <span style="background-color:#FF3333">最大在线 249</span><br>
-    		</p>
-    	</div>
-        <div id="footer-center-a">
-            <p class="severs-info">
-                <b>主服务器</b><br/>&nbsp;&nbsp;&nbsp;Intel Xeon E3-1271 v3 处理器 / 16GB DDR3 ECC 内存 / 4 × 256GB SSD RAID10 / 100Mbps 多线<br>
-                <b>创造服务器</b><br/>&nbsp;&nbsp;&nbsp;Intel E3-1231 v3 处理器 / 8GB DDR3 ECC 内存 / 128GB SSD + 2 × 1TB HDD RAID1 / 20Mbps 双线<br>
-                <b>开放服务器</b><br/>&nbsp;&nbsp;&nbsp;Intel E3-1230 处理器 / 8GB DDR3 ECC 内存 / 128GB SSD + 2×500GB HDD RAID1 / 20Mbps 双线
-            </p>
-        </div>
-    	<div id="footer-right">
-            <h4>我们的玩家</h4>
-            <ul>
-                <li>Arch Linux 中文社区 / V2EX / A3G Hackers</li>
-                <li>Google+ ACG 中文圈 / 华中科技大学风蓝动漫社</li>
-                <li>ANK-Raws & KNA Subs / DHR 动研字幕组 / 动漫流行馆</li>
-                <li>莳乃字幕屋 / 茉语字幕组 / 诸神字幕组</li>
-                <li>更多...</li>
-            </ul>
-        </div>
-        <div id="footer-center">
-            <div class="div-left">
-                <img src="./img/logo-c.png" width="auto" height="80px">
-            </div>
-            <div class="div-right">
-                <nav class="sns-small">
-                    <ul>
-                        <li><a href="https://bbs.nyaa.cat"><i class="icon-bubbles"></i>官方论坛</li></a>
-                        <li><a href="https://plus.google.com/communities/106016758621697881816"><i class="icon-google-plus2"></i>Google+ 社群</li></a>
-                    </ul>
-                </nav>
-            </div>
-
-            <p class="copyright">©喵窝(Nyaa.Cat) 2015, All rights reserved.</p>
-            <p class="icon-embed2" id="ox"> by <a href="https://www.ooxx.dk" title="Go to OX's Homepage" alt="OX(Ou TakashiMine)"><span class="icon-link">OX</span></a> on <i class="icon-apple"></i> with <i class="icon-heart"></i>️</p>
-        </div>
-    </footer>
 </body>
+
 </html>
-<!--
-=========================
-Author: OX(Ou TakashiMine)
-E-mail: ox@ooxx.dk
-Author Website:https://www.ooxx.dk
-Date: 2015-05-20 12:38:45 / 2015-05-26 00:13:43 / 2015-05-26 21:51:24
-©Copyright OX(Ou TakashiMine) 2015, All rights reserved.
-=========================
-/*!
- * (c) Tunghsiao Liu.
- *
- * cube.less - v0.0.2 (02-28-2014)
- * WTFPL - http://github.com/sparanoid/cube.less/blob/master/LICENSE
- */
- -->
