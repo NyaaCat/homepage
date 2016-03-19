@@ -161,6 +161,7 @@ hgroup h3 small {
 }
 hgroup hr {
 	width: 10%;
+        margin: auto;
 }
 #learn-more {
 
