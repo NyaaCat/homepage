@@ -399,6 +399,7 @@ hgroup hr {
 #mail ol li {
 	font-size: 1rem;
 	list-style: 2.3rem;
+        margin-left: 1rem;
 }
 .ul-checked-list li:before {
     /* use !important to prevent issues with browser extensions that change fonts */
