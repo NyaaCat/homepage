@@ -226,6 +226,9 @@ hgroup hr {
 .section-content h4 {
 	/*margin-top: 0;*/
 }
+.section-content a {
+	color: #88abda;
+}
 #section-1 {
 	text-align: center;
 }
