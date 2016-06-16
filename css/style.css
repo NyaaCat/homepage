@@ -432,7 +432,8 @@ li.nav {
 header {
 	width: 100%;
 	background-color: rgba(255,255,255,.9);
-	transition: background-color .7s;
+	box-shadow: 0 0 5px rgba(0,0,0,.1);
+	transition: all .5s;
 }
 header * {
 	display: inline-block;
@@ -471,6 +472,7 @@ header * {
 }
 .viewing-page-1 header {	
 	background-color: rgba(255,255,255,0);
+	box-shadow: 0 0 5px rgba(0,0,0,0);
 }
 .viewing-page-1 #header-logo {	
 	background-image: url('../img/logo/nyaacat.logo.w.png');
