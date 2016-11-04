@@ -1,0 +1,210 @@
+/* --------------------------------------
+=========================================
+RESPONSIVE FIXES
+=========================================
+-----------------------------------------*/
+
+
+ @media (max-width: 991px) {
+     
+     .pull-right, 
+     .pull-left {
+         float: none !important;
+         margin: auto;
+     }
+     
+     .text-left,
+     .text-right {
+         
+         text-align: center;
+     }
+     
+     .side-screenshot {
+         margin-bottom: 40px;
+     }
+     
+     .feature-list-1 {
+         margin-top: 0;
+     }
+     
+     .feature-list-1 li .icon-container {
+         float: left !important;
+     }
+     
+     .feature-list-1 li p {
+         text-align: left !important;
+     }
+     .feature-list-2 li .icon-container {
+         margin-right: 0;
+         margin: auto;
+         margin-bottom: 10px;
+     }
+     
+     header .vertical-registration-form {
+         margin-top: 10px;
+        
+     }
+     
+     .intro-section {
+         margin-bottom: 50px;
+         margin-top: 0;
+     }
+ }
+ 
+ 
+@media (min-width: 768px) and (max-width: 991px) { 
+    
+    html {
+        font-size: 90%;
+    }
+    
+    .sticky-navigation .navbar-header {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .sticky-navigation .navbar-header a {
+        float: none !important;
+    }
+     
+     .feature-list-1 {
+         float: left;
+         font-size: 16px;
+         line-height: 25px;
+     }
+     .feature-list-1 li p {
+         font-size: 16px;
+         line-height: 25px;
+     }
+    
+}
+
+
+@media(max-width:767px) {
+    
+	html {
+		font-size: 80%;
+	}
+
+	header,
+	.cta-section {
+		background-attachment: scroll !important;
+	}
+
+	.navigation-header {
+		padding-top: 25px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-inverse .navbar-collapse {
+		border-color: #ececec;
+	}
+
+	.intro {
+		text-align: center !important;
+	}
+	
+	.button-container {
+	    margin-top: 10px;
+	    margin-bottom: 70px;
+	    padding: 10px;
+	}
+	
+	.intro-section .sub-heading {
+	    font-size: 15px;
+	    line-height: 25px;
+	}
+
+	.section1,
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6,
+    .section7 {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	.feature-list-1 {
+		width: 80%;
+		margin: auto;
+	}
+
+	.feature-list-1 li p {
+		font-size: 16px;
+		line-height: 25px;
+	}
+
+	.navbar-toggle {
+		background: #727272;
+	}
+
+	.nav>li {
+		display: inline-block;
+	}
+
+	.vertical-registration-form {
+		max-width: 80%;
+	}
+
+	.subscription-form .input-box {
+		margin: auto;
+		width: 80%;
+		margin-bottom: 10px;
+		margin-top: 25px;
+	}
+}
+ 
+ 
+@media(max-width:480px) {
+    
+	html {
+		font-size: 65%;
+	}
+
+	.feature-list-1 {
+		display: none;
+	}
+
+	body {
+		font-size: 13px;
+		line-height: 21px;
+	}
+	
+	.button-container {
+	    margin-bottom: 40px;
+	}
+
+	.feature-list-1 {
+		width: 80%;
+	}
+
+	.vertical-registration-form {
+		max-width: 100%;
+	}
+
+	h4 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	h5 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	h6 {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.standard-button,
+    .secondary-button,
+    .secondary-button-white {
+		font-size: 13px;
+		min-width: 100px;
+		padding: 11px 20px 11px 20px;
+	}
+}
