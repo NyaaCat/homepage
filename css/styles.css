@@ -753,6 +753,10 @@ object {
 	color: #ffffff;
 }
 
+.cta-section-li {
+        color: #ffffff;
+}
+
 .cta-section .color-overlay {
 	padding-top: 125px;
 	padding-bottom: 125px;
