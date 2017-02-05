@@ -753,8 +753,26 @@ object {
 	color: #ffffff;
 }
 
+.cta-section-p {
+        color: #ffffff;
+        width: 50%;
+        margin: auto;
+}
+
+.cta-section-ul {
+        margin: auto;
+        max-width: 35%;
+}
+
 .cta-section-li {
         color: #ffffff;
+        text-align: left;
+}
+
+.cta-section-code {
+        font-family: 'Source Code Pro', Consolas, 'Menlo', Monaco, 'Dejavu Sans Mono', 'Courier New', monospace;
+        color: #ffffff;
+        background-color: inherit;
 }
 
 .cta-section .color-overlay {
