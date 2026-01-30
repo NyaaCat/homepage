@@ -41,10 +41,10 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" asChild>
+            <Button size="lg" variant="secondary" className="hover:!shadow-[4px_4px_0px_0px_rgba(255,255,255,0.9)]" asChild>
               <a href="#about">{t("learnMore")}</a>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" className="hover:!shadow-[4px_4px_0px_0px_var(--secondary)]" asChild>
               <a href="#servers">{t("viewServers")}</a>
             </Button>
           </div>
