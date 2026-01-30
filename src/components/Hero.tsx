@@ -1,7 +1,12 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/retroui/Button";
 
 export function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="relative bg-primary py-20 md:py-32 border-b-2 border-black overflow-hidden">
       {/* Decorative elements */}
@@ -26,21 +31,21 @@ export function Hero() {
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6">
-            NyaaCat 游戏社区
+            {t("title")}
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10">
-            一个开放、多元化的游戏玩家社区
+            {t("subtitle")}
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" asChild>
-              <a href="#about">了解更多</a>
+              <a href="#about">{t("learnMore")}</a>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="#servers">查看服务器</a>
+              <a href="#servers">{t("viewServers")}</a>
             </Button>
           </div>
         </div>

@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
+  const t = useTranslations("footer");
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,12 +25,12 @@ export function Footer() {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-center">
-            &copy;{currentYear} NyaaCat Community
+            &copy;{currentYear} {t("copyright")}
           </p>
 
           {/* Made with love */}
           <p className="text-sm text-muted-foreground">
-            Made with <span className="text-primary">❤</span> since 2011
+            {t("madeWith")} <span className="text-primary">❤</span> {t("since")}
           </p>
         </div>
       </div>

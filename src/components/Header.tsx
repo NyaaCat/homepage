@@ -2,23 +2,26 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/retroui/Button";
-
-const navLinks = [
-  { href: "#about", label: "关于" },
-  { href: "#servers", label: "服务器" },
-  { href: "#contact", label: "联系" },
-];
-
-const externalLinks = [
-  { href: "https://wiki.nyaa.cat", label: "Wiki" },
-  { href: "https://community.craft.moe", label: "论坛" },
-  { href: "https://github.com/NyaaCat", label: "GitHub" },
-];
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations("header");
+
+  const navLinks = [
+    { href: "#about", label: t("about") },
+    { href: "#servers", label: t("servers") },
+    { href: "#contact", label: t("contact") },
+  ];
+
+  const externalLinks = [
+    { href: "https://wiki.nyaa.cat", label: t("wiki") },
+    { href: "https://community.craft.moe", label: t("forum") },
+    { href: "https://github.com/NyaaCat", label: t("github") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b-2 border-black bg-card">
@@ -50,37 +53,42 @@ export function Header() {
                 </a>
               </Button>
             ))}
+            <span className="text-border">|</span>
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 border-2 border-black rounded-none bg-card shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_var(--primary)]"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center gap-2 md:hidden">
+            <LanguageSwitcher />
+            <button
+              className="p-2 border-2 border-black rounded-none bg-card shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_var(--primary)]"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
             >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
