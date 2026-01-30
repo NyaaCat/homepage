@@ -20,6 +20,8 @@ export function LanguageSwitcher() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (newLocale: Locale) => {
+    // Save preference to localStorage
+    localStorage.setItem("preferred-locale", newLocale);
     router.replace(pathname, { locale: newLocale });
     setIsOpen(false);
   };

@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, getTranslations } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { Toaster } from "@/components/ui/sonner";
-import { routing } from "@/i18n/routing";
+import { routing, type Locale } from "@/i18n/routing";
 import "../globals.css";
+
+import zhMessages from "../../../messages/zh.json";
+import enMessages from "../../../messages/en.json";
+import jaMessages from "../../../messages/ja.json";
+import caMessages from "../../../messages/ca.json";
+
+const messages: Record<Locale, typeof zhMessages> = {
+  zh: zhMessages,
+  en: enMessages,
+  ja: jaMessages,
+  ca: caMessages,
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +36,11 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
+  const localeMessages = messages[locale as Locale] || messages.zh;
 
   return {
-    title: t("title"),
-    description: t("description"),
+    title: localeMessages.metadata.title,
+    description: localeMessages.metadata.description,
     keywords: ["NyaaCat", "喵窝", "Minecraft", "游戏社区", "毛玉线圈物语"],
     icons: {
       icon: "/favicon.ico",
@@ -44,12 +56,12 @@ export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
+  if (!routing.locales.includes(locale as Locale)) {
     notFound();
   }
 
-  // Providing all messages to the client side
-  const messages = await getMessages();
+  // Enable static rendering
+  setRequestLocale(locale);
 
   const langMap: Record<string, string> = {
     zh: "zh-CN",
@@ -63,7 +75,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
       >
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages[locale as Locale]}>
           {children}
           <Toaster />
         </NextIntlClientProvider>
