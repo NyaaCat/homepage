@@ -18,10 +18,10 @@
     "viewServers": "查看服务器"
   },
   "about": {
-    "title": "关于我们",
+    "title": "关于",
     "intro": "NyaaCat 从 Minecraft 玩家群体发展而来，是一个开放性、多元化的游戏玩家社区。",
     "values": {
-      "title": "我们的核心价值",
+      "title": "核心价值",
       "freedom": "自由",
       "equality": "平等",
       "openness": "开放",
@@ -30,8 +30,8 @@
     "description": "社区由兴趣驱动，完全公益运营，没有任何收费项目。在这里，不同的人因同样的爱好而聚集，分享游戏的乐趣。"
   },
   "servers": {
-    "title": "游戏服务器",
-    "subtitle": "我们运营着多个游戏服务器，欢迎加入",
+    "title": "服务器",
+    "subtitle": "运营中的多个游戏服务器，欢迎加入",
     "addressLabel": "服务器地址（点击复制）",
     "addressCopied": "服务器地址已复制",
     "groupNumberCopied": "群号已复制",
@@ -72,8 +72,8 @@
     }
   },
   "contact": {
-    "title": "联系我们",
-    "subtitle": "通过以下方式与我们取得联系",
+    "title": "联系",
+    "subtitle": "通过以下方式取得联系",
     "forum": "论坛",
     "forumDesc": "社区论坛，交流讨论",
     "wiki": "Wiki",

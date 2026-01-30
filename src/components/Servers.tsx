@@ -127,6 +127,7 @@ const serversData: ServerData[] = [
       { labelKey: "links.wiki", href: "https://wiki.nyaa.cat", type: "website" },
       { labelKey: "links.steam", href: "https://steamcommunity.com/groups/nyaacat", type: "steam" },
     ],
+    shadowHover: "#66c0f4",
   },
 ];
 

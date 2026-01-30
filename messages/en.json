@@ -18,10 +18,10 @@
     "viewServers": "View Servers"
   },
   "about": {
-    "title": "About Us",
+    "title": "About",
     "intro": "NyaaCat evolved from a Minecraft player community into an open and diverse gaming community.",
     "values": {
-      "title": "Our Core Values",
+      "title": "Core Values",
       "freedom": "Freedom",
       "equality": "Equality",
       "openness": "Openness",
@@ -30,8 +30,8 @@
     "description": "The community is driven by passion, operates entirely non-profit, and has no paid features. Here, people with the same interests come together to share the joy of gaming."
   },
   "servers": {
-    "title": "Game Servers",
-    "subtitle": "We operate multiple game servers, welcome to join",
+    "title": "Servers",
+    "subtitle": "Multiple game servers available, welcome to join",
     "addressLabel": "Server Address (click to copy)",
     "addressCopied": "Server address copied",
     "groupNumberCopied": "Group number copied",
@@ -72,8 +72,8 @@
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "Get in touch with us through the following channels",
+    "title": "Contact",
+    "subtitle": "Get in touch through the following channels",
     "forum": "Forum",
     "forumDesc": "Community forum for discussions",
     "wiki": "Wiki",

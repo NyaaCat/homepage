@@ -18,10 +18,10 @@
     "viewServers": "Veure servidors"
   },
   "about": {
-    "title": "Sobre nosaltres",
+    "title": "Sobre",
     "intro": "NyaaCat va evolucionar d'una comunitat de jugadors de Minecraft a una comunitat de jugadors oberta i diversa.",
     "values": {
-      "title": "Els nostres valors fonamentals",
+      "title": "Valors fonamentals",
       "freedom": "Llibertat",
       "equality": "Igualtat",
       "openness": "Obertura",
@@ -30,8 +30,8 @@
     "description": "La comunitat està impulsada per la passió, funciona completament sense ànim de lucre i no té funcions de pagament. Aquí, persones amb els mateixos interessos es reuneixen per compartir l'alegria dels jocs."
   },
   "servers": {
-    "title": "Servidors de jocs",
-    "subtitle": "Operem múltiples servidors de jocs, us donem la benvinguda",
+    "title": "Servidors",
+    "subtitle": "Múltiples servidors de jocs disponibles, benvinguts",
     "addressLabel": "Adreça del servidor (clica per copiar)",
     "addressCopied": "Adreça del servidor copiada",
     "groupNumberCopied": "Número de grup copiat",
@@ -72,8 +72,8 @@
     }
   },
   "contact": {
-    "title": "Contacteu-nos",
-    "subtitle": "Poseu-vos en contacte amb nosaltres a través dels canals següents",
+    "title": "Contacte",
+    "subtitle": "Disponible a través dels canals següents",
     "forum": "Fòrum",
     "forumDesc": "Fòrum de la comunitat per a discussions",
     "wiki": "Wiki",
