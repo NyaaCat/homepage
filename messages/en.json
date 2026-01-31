@@ -46,12 +46,16 @@
       "description": "Simple, reliable, minimally restricted vanilla survival experience. No whitelist required, join directly with a legitimate account."
     },
     "terraria": {
-      "name": "Terraria Meow",
+      "name": "Terra Nya",
       "description": "Community Terraria server offering both progression and casual gameplay experiences."
     },
     "ror2": {
       "name": "Rain of Death 2.1",
       "description": "Community Risk of Rain 2 multiplayer server with classic and endless modes."
+    },
+    "dst": {
+      "name": "Starve Nya",
+      "description": "Community Don't Starve Together server, explore the joy of survival together."
     },
     "more": {
       "name": "More Games",

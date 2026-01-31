@@ -69,6 +69,12 @@ const qqGroups: Record<string, QQGroup> = {
     qrCode: "/qq/qq-ror2.JPG",
     link: "https://qun.qq.com/universal-share/share?ac=1&authKey=bac%2B5qj2rwlwgwq5rqsnHSDSn2vHwLm8%2BwFpCOf%2BfubJ1aYYSsVu2LKBbZWCQ4vk&busi_data=eyJncm91cENvZGUiOiI4Njg3NjUyMDkiLCJ0b2tlbiI6InNuanBKZDJGcXB1eUxUTkhSTXh5cVpJTVFaY3ZtMmpUNHZNRC9sdUp3RDdvbHROTy90UmNFZGtpTGRteGtpM1oiLCJ1aW4iOiIzNDI0ODA4Nzg2In0%3D&data=umGG78ReOPr7jeWue-LaQ0-glUvFxA1TUhnmuWdx6n4s8sDCPODtrLn-zuROpPgOaQgUQBDeQXig7vkE4jiI-w&svctype=4&tempid=h5_group_info",
   },
+  dst: {
+    name: "[NyaaCat] 饥荒喵",
+    number: "818980851",
+    qrCode: "/qq/qq-dst.JPG",
+    link: "https://qm.qq.com/q/PCYn611b6q",
+  },
 };
 
 const serversData: ServerData[] = [
@@ -118,6 +124,16 @@ const serversData: ServerData[] = [
     ],
     shadowDefault: "#425161",
     shadowHover: "#efd27b",
+  },
+  {
+    nameKey: "dst.name",
+    descKey: "dst.description",
+    game: "Don't Starve Together",
+    links: [
+      { labelKey: "links.qqGroup", href: "#", type: "qq", qqGroup: qqGroups.dst },
+    ],
+    shadowDefault: "#000",
+    shadowHover: "#e1c275",
   },
   {
     nameKey: "more.name",
@@ -269,9 +285,9 @@ export function Servers() {
                   <Image
                     src={selectedQQGroup.qrCode}
                     alt={`${selectedQQGroup.name} QR Code`}
-                    width={200}
-                    height={200}
-                    className="w-48 h-48 object-cover"
+                    width={280}
+                    height={280}
+                    className="w-[280px] h-[280px] object-contain"
                   />
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 w-full">
